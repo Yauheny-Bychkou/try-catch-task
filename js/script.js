@@ -49,7 +49,7 @@ const filterByType = (type, ...values) => values.filter((value) => typeof value 
       const valuesArray = eval(`filterByType('${type}', ${values})`).join(", ");
       // Тернарный оператор. если valuesArray.length === true, то выполняем следующий код:
       const alertMsg = valuesArray.length
-        ? //присваиваем значения переменной alertMsg на основе результатов работы тернарного оператора :
+        ? //присваиваем значения переменной alertMsg на основе результатов работы тернарного оператора  :
           // если valuesArray.length === true, то переменной alertMsg присваиваем значение:
           `Данные с типом ${type}: ${valuesArray}`
         : // если valuesArray.length !== true, то переменной alertMsg присваиваем значение:
